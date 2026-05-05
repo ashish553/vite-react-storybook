@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -108,4 +108,46 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+} */
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f7fb;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+
+  --brand-primary: #007ea7;
+
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+
+  --btn-bg: #007ea7;
+  --btn-text: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0b1220;
+  --bg-secondary: #0f172a;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+
+  --brand-primary: #38bdf8;
+
+  --card-bg: #111827;
+  --border-color: #1f2937;
+
+  --btn-bg: #38bdf8;
+  --btn-text: #0b1220;
+}
+
+/* Global transition */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }
